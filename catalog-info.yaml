@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "labs-stuartblabs"
+  description: Deploying a Java application
+  annotations:
+    # This must match folder-name/job-name in Jenkins.
+    jenkins.io/job-full-name: cft:HMCTS_labs/labs-stuartblabs
+    github.com/project-slug: 'hmcts/labs-stuartblabs'
+  tags:
+    - java
+  links:
+    - url: https://hmcts-reform.slack.com/app_redirect?channel=rse
+      title: rse on Slack
+      icon: chat
+spec:
+  type: service
+  system: labs
+  lifecycle: experimental
+  owner: dts_cft_developers
